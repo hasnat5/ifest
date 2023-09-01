@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -14,9 +14,50 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+} */
+
+@layer base{
+  h1{
+    @apply font-sans text-white text-5xl md:text-7xl
+  }
+  h2{
+    @apply font-sans text-white text-3xl md:text-5xl
+  }
+  h3{
+    @apply font-sans text-white text-xl md:text-3xl
+  }
+  h4{
+    @apply font-mono text-tertiary text-base md:text-xl
+  }
+  p{
+    @apply font-sans text-tertiary text-base
+  }
 }
 
-body {
+@layer components{
+  .faqborder{
+    position: relative;
+  }
+  .faqborder::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 16px; /*1*/
+  border: 2px solid transparent; /*2*/
+  background: linear-gradient(313deg, #6843EC 17.53%, #00FF68 94.64%) border-box; /*3*/
+  -webkit-mask: /*4*/
+     linear-gradient(#fff 0 0) padding-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor; /*5'*/
+          mask-composite: exclude; /*5*/
+  }
+
+  .footerLink{
+    @apply font-sans text-white text-base
+  }
+}
+
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +65,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
