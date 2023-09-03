@@ -55,14 +55,15 @@
   .footerLink{
     @apply font-sans text-white text-base
   }
+
+  .bgjumbotron{
+    background-image: url('/assets/images/box_string.svg'), radial-gradient(circle closest-corner at 50% 20%, #10012c, #1a073c 20%, #150630 40%, #100721 60%, #190b36 80%, #0A090F);
+    background-position: 50%, 0 0;
+    background-size: auto, auto;
+  }
 }
 
-/* body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
+body {
+  /* color: rgb(var(--foreground-rgb)); */
+  background-color: #0A090F; 
+}
