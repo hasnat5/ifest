@@ -1,6 +1,9 @@
 import Button from '@/components/Button'
 import Image from 'next/image'
 import Benefit from '@/components/Benefit';
+import dataFAQ from '../data/dataFAQ.json';
+import FAQ from '@/components/FAQ';
+import Partner from '@/components/Partner';
 
 // TODO:
 //  
@@ -116,7 +119,7 @@ export default function Home() {
 		// </main>
 		<main className='container min-w-full bg-[#0A090F]'>
 			{/* BANNER */}
-			<section className='grid gap-6 px-6 py-16 h-screen min-h-[666px] lg:grid-cols-2'>
+			<section className='bgjumbotron grid gap-6 px-6 py-16 h-screen min-h-[666px] lg:grid-cols-2'>
 				<div className='text-center grid gap-6 content-center order-last md:order-1'>
 					<h1><span style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='bg-clip-text text-transparent'>EasyDebt</span> With AI</h1>
 					<p>Memberdayakan Anda dalam memantau utang dan merencanakan strategi pelunasan yang lebih cerdas.</p>
@@ -133,6 +136,11 @@ export default function Home() {
 						priority
 					/>
 				</div>
+			</section>
+
+			{/* PARTNER */}
+			<section className="w-full grid border-y border-[#353539] h-full">
+				<Partner />
 			</section>
 
 			{/* ABOUT */}
@@ -163,9 +171,11 @@ export default function Home() {
 
 
 				<div className='grid gap-6'>
-					<Benefit />
-					<Benefit />
-					<Benefit />
+					{dataFAQ.map((data, key) => {
+						return (
+							<Benefit key={key} title={data.title} description={data.description} />
+						)
+					})}
 				</div>
 			</section>
 
@@ -181,38 +191,12 @@ export default function Home() {
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 				</div>
 
-				<div className="collapse collapse-plus bg-quaternary faqborder" >
-					<input type="radio" name="my-accordion-3" />
-					<div className="collapse-title">
-						<h3>
-							Click to open this one and close others
-						</h3>
-					</div>
-					<div className="collapse-content">
-						<p>hello</p>
-					</div>
-				</div>
-				<div className="collapse collapse-plus bg-quaternary faqborder" >
-					<input type="radio" name="my-accordion-3" />
-					<div className="collapse-title">
-						<h3>
-							Click to open this one and close others
-						</h3>
-					</div>
-					<div className="collapse-content">
-						<p>hello</p>
-					</div>
-				</div>
-				<div className="collapse collapse-plus bg-quaternary faqborder" >
-					<input type="radio" name="my-accordion-3" />
-					<div className="collapse-title">
-						<h3>
-							Click to open this one and close others
-						</h3>
-					</div>
-					<div className="collapse-content">
-						<p>hello</p>
-					</div>
+				<div className='grid gap-4'>
+					{dataFAQ.map((data, key) => {
+						return (
+							<FAQ key={key} title={data.title} description={data.description} />
+						)
+					})}
 				</div>
 			</section>
 		</main>
