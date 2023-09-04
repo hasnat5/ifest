@@ -29,6 +29,9 @@
   h4{
     @apply font-mono text-tertiary text-base md:text-xl
   }
+  h5{
+    @apply font-mono text-tertiary text-xs md:text-base
+  }
   p{
     @apply font-sans text-tertiary text-base
   }

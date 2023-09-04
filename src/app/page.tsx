@@ -1,4 +1,4 @@
-import Button from '@/components/Button'
+import { Button } from '@/components/Button'
 import Image from 'next/image'
 import Benefit from '@/components/Benefit';
 import dataFAQ from '../data/dataFAQ.json';

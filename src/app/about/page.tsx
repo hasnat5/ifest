@@ -1,12 +1,15 @@
-import Button from '@/components/Button'
+// import Button from '@/components/Button'
+import { Button, ButtonSec } from '@/components/Button'
+import Team from '@/components/Team'
 import Image from 'next/image'
 import React from 'react'
+import dataTeam from '../../data/dataTeam.json';
 
 const page = () => {
     return (
         <main className='container min-w-full'>
             {/* HERO */}
-            <section className='grid gap-12 px-6 py-16 text-center'>
+            <section className='grid gap-12 px-6 pt-32 pb-16 text-center'>
                 <div className='grid gap-4'>
                     <h1>Who We Are?</h1>
                     <p>Sit at urna amet elementum ullamcorper hendrerit arcu interdum fermentum leo nisl sapien aliquam proin id purus tellus condimentum integer dolor sit amet consector.</p>
@@ -65,8 +68,30 @@ const page = () => {
                 </div>
 
 
-                <div>
+                <div className='grid gap-6'>
+                    {dataTeam.map((data, key) => {
+                        return (
+                            // <FAQ key={key} title={data.title} description={data.description} />
+                            <Team image={data.image} name={data.name} about={data.about} role={data.role} instagram={data.instagram} linkedin={data.linkedin} email={data.email} key={key} />
+                        )
+                    })}
 
+                </div>
+            </section>
+
+            <section className='grid py-12 px-6'>
+                <div style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='grid gap-6 rounded-lg px-6 pt-12 pb-48 relative overflow-hidden'>
+                    <h3>Let's start building binge-worthy experiences for your customers</h3>
+                    <ButtonSec />
+                    <Image
+                        src="https://assets.website-files.com/63b8916a2666a32bc26a89ba/63b8916a2666a315fe6a89fe_image-1-hero-v1-dataplus-template-p-1600.png"
+                        alt="CTA"
+                        className="w-full h-auto rounded-lg absolute -bottom-20 -right-10"
+                        width={1468}
+                        height={1268}
+                        quality={100}
+                        priority
+                    />
                 </div>
             </section>
         </main>
