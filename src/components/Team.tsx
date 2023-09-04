@@ -9,14 +9,14 @@ const Team: React.FC<Team> = ({ image, name, about, email, instagram, role, link
             <Image
                 src={image}
                 alt="OrbitDebt Banner"
-                className="w-3/6 h-auto rounded-lg justify-self-center"
+                className="saturate-0 contrast-125 w-3/6 h-auto rounded-lg justify-self-center"
                 width={1468}
                 height={1268}
                 quality={100}
-                priority
+            // priority
             />
 
-            <div className='grid gap-2'>
+            <div className='grid gap-2 z-10'>
                 <div className='flex items-center gap-3.5'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="6" height="5.3" viewBox="0 0 10 9" fill="none">
                         <path
@@ -29,13 +29,13 @@ const Team: React.FC<Team> = ({ image, name, about, email, instagram, role, link
                 <h5 className='uppercase'>{role}</h5>
             </div>
 
-            <div>
+            <div className='z-10'>
                 <p className='text-white'>
                     {about}
                 </p>
             </div>
 
-            <div className='w-full flex flex-wrap justify-start gap-4'>
+            <div className='w-full flex flex-wrap justify-start gap-4 z-10'>
                 <a href={linkedin} target='_blank' className='flex items-center gap-2'>
                     <h5 className='uppercase'>linkedin</h5>
                     <i className="ri-arrow-right-up-line text-tertiary"></i>

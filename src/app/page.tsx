@@ -4,6 +4,7 @@ import Benefit from '@/components/Benefit';
 import dataFAQ from '../data/dataFAQ.json';
 import FAQ from '@/components/FAQ';
 import Partner from '@/components/Partner';
+import CTA from '@/components/CTA';
 
 // TODO:
 //  
@@ -198,6 +199,11 @@ export default function Home() {
 						)
 					})}
 				</div>
+			</section>
+
+
+			<section className='grid py-12 px-6'>
+				<CTA />
 			</section>
 		</main>
 

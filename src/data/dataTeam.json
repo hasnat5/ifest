@@ -1,15 +1,15 @@
 [
     {
-        "image": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80",
+        "image": "/assets/images/team/hasnat.jpg",
         "name": "Hasnat Ferdiananda",
         "role": "Frontend Developer",
-        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui.",
-        "linkedin": "",
-        "instagram": "",
-        "email": ""
+        "about": "I build accessible, inclusive products and digital experiences for the web. My main focus these days is building products and leading projects for our clients at Virtuwed.",
+        "linkedin": "https://www.linkedin.com/in/hasnatf/",
+        "instagram": "https://www.instagram.com/hasnat5_/",
+        "email": "mailto:ferdianandahasnat@gmail.com"
     },
     {
-        "image": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80",
+        "image": "/assets/images/team/diaz.jpg",
         "name": "Diaz Adriansyah",
         "role": "Backend Developer",
         "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui.",
@@ -18,8 +18,8 @@
         "email": ""
     },
     {
-        "image": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80",
-        "name": "Raihana Aisha Az-zahra",
+        "image": "/assets/images/team/raihana.jpg",
+        "name": "Raihana Aisha Az-Zahra",
         "role": "Content Creator",
         "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui.",
         "linkedin": "",
@@ -27,9 +27,9 @@
         "email": ""
     },
     {
-        "image": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80",
+        "image": "/assets/images/team/fadhli.jpg",
         "name": "Muhammad Fadhli Fathoni",
-        "role": "Data analyst",
+        "role": "Data scientist",
         "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui.",
         "linkedin": "",
         "instagram": "",
