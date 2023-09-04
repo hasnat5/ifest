@@ -9,7 +9,7 @@ import shuffleArray from '@/utils/shuffleFunction'
 import { TeamDataType } from '@/models/interface'
 
 
-const page = () => {
+const About = () => {
     const [shuffledTeamData, setShuffledTeamData] = useState<Array<TeamDataType>>([]);
 
     useEffect(() => {
@@ -96,4 +96,4 @@ const page = () => {
     )
 }
 
-export default page
+export default About
