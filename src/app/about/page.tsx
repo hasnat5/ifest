@@ -1,12 +1,22 @@
-// import Button from '@/components/Button'
-import { Button, ButtonSec } from '@/components/Button'
+'use client'
+import { Button } from '@/components/Button'
 import Team from '@/components/Team'
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import dataTeam from '../../data/dataTeam.json';
 import CTA from '@/components/CTA';
+import shuffleArray from '@/utils/shuffleFunction'
+import { TeamDataType } from '@/models/interface'
+
 
 const page = () => {
+    const [shuffledTeamData, setShuffledTeamData] = useState<Array<TeamDataType>>([]);
+
+    useEffect(() => {
+        // Shuffle the initial team data when the component mounts
+        const shuffledData = shuffleArray(dataTeam);
+        setShuffledTeamData(shuffledData);
+    }, []);
     return (
         <main className='container min-w-full'>
             {/* HERO */}
@@ -70,10 +80,9 @@ const page = () => {
 
 
                 <div className='grid gap-6'>
-                    {dataTeam.map((data, key) => {
+                    {shuffledTeamData.map((data, key) => {
                         return (
-                            // <FAQ key={key} title={data.title} description={data.description} />
-                            <Team image={data.image} name={data.name} about={data.about} role={data.role} instagram={data.instagram} linkedin={data.linkedin} email={data.email} key={key} />
+                            <Team image={data.image} name={data.name} about={data.about} role={data.role} key={key} social={data.social} />
                         )
                     })}
 

@@ -4,35 +4,44 @@
         "name": "Hasnat Ferdiananda",
         "role": "Frontend Developer",
         "about": "I build accessible, inclusive products and digital experiences for the web. My main focus these days is building products and leading projects for our clients at Virtuwed.",
-        "linkedin": "https://www.linkedin.com/in/hasnatf/",
-        "instagram": "https://www.instagram.com/hasnat5_/",
-        "email": "mailto:ferdianandahasnat@gmail.com"
+        "social": {
+            "website": "https://hasnat.upgradia.tech/",
+            "linkedin": "https://www.linkedin.com/in/hasnatf/",
+            "instagram": "https://www.instagram.com/hasnat5_/",
+            "email": "mailto:ferdianandahasnat@gmail.com"
+        }
     },
     {
         "image": "/assets/images/team/diaz.jpg",
         "name": "Diaz Adriansyah",
         "role": "Backend Developer",
-        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui.",
-        "linkedin": "",
-        "instagram": "",
-        "email": ""
+        "about": "I am web developer. I plan and develop design ideas into creative, scalable, and stunning web-based applications that meet user needs.",
+        "social": {
+            "website": "https://dazveloper.netlify.app/",
+            "linkedin": "https://www.linkedin.com/in/diaz-adriansyah-1a7a9624a/",
+            "instagram": "https://www.instagram.com/zaid.jsx/",
+            "email": "mailto:diazadrianz191205@gmail.com"
+        }
     },
     {
         "image": "/assets/images/team/raihana.jpg",
         "name": "Raihana Aisha Az-Zahra",
         "role": "Content Creator",
-        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui.",
-        "linkedin": "",
-        "instagram": "",
-        "email": ""
+        "about": "I am data enthusiast, UI/UX designer, and web developer. I built interactive and eye-catching web projects and designs.",
+        "social": {
+            "instagram": "https://instagram.com/b4cterya/",
+            "email": "mailto:raihanaaaz2@gmail.com"
+        }
     },
     {
         "image": "/assets/images/team/fadhli.jpg",
         "name": "Muhammad Fadhli Fathoni",
         "role": "Data scientist",
-        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui.",
-        "linkedin": "",
-        "instagram": "",
-        "email": ""
+        "about": "I am committed to learning and growing with a background in software engineering and a vision to create innovative software solutions that make a positive impact on the world.",
+        "social": {
+            "linkedin": "http://linkedin.com/in/mfadhlifathoni/",
+            "instagram": "https://www.instagram.com/mfadhlifathoni/",
+            "email": "mailto:fadhlifathoni62@gmail.com"
+        }
     }
 ]

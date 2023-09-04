@@ -8,12 +8,17 @@ export interface Benefit {
     description: string;
 }
 
-export interface Team {
+export interface TeamDataType {
     image: string;
     name: string;
     role: string;
     about: string;
-    linkedin: string;
-    instagram: string;
-    email: string;
+    social: SocialLinks;
+}
+
+export interface SocialLinks {
+    website?: string;
+    linkedin?: string;
+    instagram?: string;
+    email?: string;
 }

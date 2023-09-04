@@ -34,12 +34,19 @@ const Partner = () => {
                         style={{ width: 'fit-content', display: 'grid' }}
                     >
                         <Image
-                            className='bg py-5 mx-4 self-center'
+                            className='bg py-8 mx-4 self-center'
                             src={data.img}
                             width={data.width}
                             height={data.height}
                             alt="partner OrbitDebt"
+                            quality={100}
+                            priority
+                            sizes='100%'
                         />
+                        {/* <img
+                            className='py-8 mx-4 self-center h-24 w-full object-contain'
+                            src={data.img}
+                            alt="OrbitDebt Partner" /> */}
                     </SwiperSlide>
                 )
             })}
