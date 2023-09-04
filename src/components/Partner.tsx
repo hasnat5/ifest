@@ -23,7 +23,6 @@ const Partner = () => {
                 delay: 1,
                 disableOnInteraction: false
             }}
-            // autoplay
             navigation={true}
             modules={[Autoplay]}
         >
