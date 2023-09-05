@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import { Roboto_Mono } from 'next/font/google'
 import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
 
 
 export const metadata: Metadata = {
@@ -34,6 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto_mono.variable} ${violet_sans.className}`}>
+        <Navbar />
         {children}
         <Footer />
       </body>
