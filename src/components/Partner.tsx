@@ -32,16 +32,18 @@ const Partner = () => {
                         key={key}
                         style={{ width: 'fit-content', display: 'grid' }}
                     >
-                        <Image
-                            className='bg py-8 mx-4 self-center'
-                            src={data.img}
-                            width={data.width}
-                            height={data.height}
-                            alt="partner OrbitDebt"
-                            quality={100}
-                            priority
-                            sizes='100%'
-                        />
+                        <a className='py-8' target='_blank' href={data.link}>
+                            <Image
+                                className='mx-4 self-center transition duration-150 ease-in-out grayscale hover:grayscale-0'
+                                src={data.img}
+                                width={data.width}
+                                height={data.height}
+                                alt="partner OrbitDebt"
+                                quality={100}
+                                priority
+                                sizes='100%'
+                            />
+                        </a>
                         {/* <img
                             className='py-8 mx-4 self-center h-24 w-full object-contain'
                             src={data.img}

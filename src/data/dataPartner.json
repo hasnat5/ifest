@@ -1,21 +1,25 @@
 [
     {
         "img": "/assets/images/partnership/smkn4.png",
+        "link": "https://smkn4bdg.sch.id/",
         "width": 40,
         "height": 104
     },
     {
         "img": "/assets/images/partnership/orbit.svg",
+        "link": "https://orbit.smkn4bdg.sch.id/",
         "width": 126,
         "height": 40
     },
     {
         "img": "/assets/images/partnership/upgradia.svg",
+        "link": "https://upgradia.tech/",
         "width": 174,
         "height": 40
     },
     {
         "img": "/assets/images/partnership/virtuwed.png",
+        "link": "https://virtuwed.id/",
         "width": 72,
         "height": 104
     }
