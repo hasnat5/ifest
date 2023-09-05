@@ -45,15 +45,105 @@
     content: "";
     position: absolute;
     inset: 0;
-    border-radius: 16px; /*1*/
-  border: 2px solid transparent; /*2*/
-  background: linear-gradient(313deg, #6843EC 17.53%, #00FF68 94.64%) border-box; /*3*/
-  -webkit-mask: /*4*/
+    border-radius: 16px; 
+  border: 2px solid transparent; 
+  background: linear-gradient(313deg, #6843EC 17.53%, #00FF68 94.64%) border-box;
+  -webkit-mask: 
      linear-gradient(#fff 0 0) padding-box, 
      linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor; /*5'*/
-          mask-composite: exclude; /*5*/
+  -webkit-mask-composite: xor; 
+          mask-composite: exclude;
   }
+
+.teamborder{
+  position: relative;
+}
+
+  .teamborder::before{
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    
+    /* background: #807f85; */
+    background: #00FF68;
+    
+    content: "";
+    top: 0;
+    left: -5px;
+    transform: rotate(-45deg);
+    transform-origin: top right;
+  }
+  .teamborder::after{
+    position: absolute;
+    width: 18px;
+    height: 2px;
+
+    /* background: #807f85; */
+    background: #6843EC;
+
+
+    content: "";
+    bottom: 0;
+    right: -5px;
+    transform: rotate(-45deg);
+    transform-origin: bottom left;
+  }
+
+  .teamborderinside::before{
+    top: 0;
+    left: 13px;
+    position: absolute;
+    width: calc(100% - 13px);
+    height: 2px;
+
+    /* background: #807f85; */
+    background: linear-gradient(313deg, #6843EC 0%, #00FF68 100%);
+
+    
+    content: "";
+  }
+  
+  .teamborderinside::after{
+    bottom: 0;
+    right: 13px;
+    position: absolute;
+    width: calc(100% - 13px);
+    height: 2px;
+
+    /* background: #807f85; */
+    background: #6843EC;
+
+
+    content: "";
+  }
+
+  .teamborderinsideinside::before{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 2px;
+    height: calc(100% - 13px);
+    
+    /* background: #807f85; */
+    background: linear-gradient(313deg, #6843EC 0%, #00FF68 100%);
+
+    
+    content: "";
+  }  
+  
+  .teamborderinsideinside::after{
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 2px;
+    height: calc(100% - 13px);
+
+    /* background: #807f85; */
+    background: #6843EC;
+
+    
+    content: "";
+  }  
 
   .footerLink{
     @apply font-sans text-white text-base
@@ -70,3 +160,5 @@ body {
   /* color: rgb(var(--foreground-rgb)); */
   background-color: #0A090F; 
 }
+
+

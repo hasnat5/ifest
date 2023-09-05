@@ -5,7 +5,6 @@ import dataFAQ from '../data/dataFAQ.json';
 import FAQ from '@/components/FAQ';
 import Partner from '@/components/Partner';
 import CTA from '@/components/CTA';
-
 // TODO:
 //  
 
@@ -119,6 +118,7 @@ export default function Home() {
 		//   </div>
 		// </main>
 		<main className='container min-w-full bg-[#0A090F]'>
+
 			{/* BANNER */}
 			<section className='bgjumbotron grid gap-6 px-6 py-16 h-screen min-h-[666px] lg:grid-cols-2'>
 				<div className='text-center grid gap-6 content-center order-last md:order-1'>
