@@ -26,20 +26,20 @@ const Navbar = () => {
 
     const MenuOn = () => {
         const handleLinkClick = () => {
-            setTimeout(function () {
-                setOpen(false); // Change the state when the link is clicked
-            }, 500);
-            // setOpen(false); // Change the state when the link is clicked
+            // setTimeout(function () {
+            //     setOpen(false); // Change the state when the link is clicked
+            // }, 500);
+            setOpen(false); // Change the state when the link is clicked
         };
         return (
             <div className={`${isOpen ? "block" : "hidden"} overflow-y-auto w-full h-full min-h-screen bg-[#0A090F] overflow-hidden max-h-full`}>
                 <div className='w-full h-full'>
 
                     <ul className='px-6 grid divide-y divide-[#353539]'>
-                        <li className='py-4'><Link onClick={handleLinkClick} href={'/'} className='inline-block font-mono capitalize text-white text-xs '>home</Link></li>
-                        <li className='py-4'><Link onClick={handleLinkClick} href={'/repayment'} className='inline-block font-mono capitalize text-white text-xs '>repayment</Link></li>
-                        <li className='py-4'><Link onClick={handleLinkClick} href={'/appropriateness'} className='inline-block font-mono capitalize text-white text-xs '>appropriateness</Link></li>
-                        <li className='py-4'><Link onClick={handleLinkClick} href={'/about'} className='inline-block font-mono capitalize text-white text-xs '>about us</Link></li>
+                        <li><Link onClick={handleLinkClick} href={'/'} className='grid font-mono capitalize text-white text-xs py-4'>home</Link></li>
+                        <li><Link onClick={handleLinkClick} href={'/repayment'} className='grid font-mono capitalize text-white text-xs py-4'>repayment</Link></li>
+                        <li><Link onClick={handleLinkClick} href={'/appropriateness'} className='grid font-mono capitalize text-white text-xs py-4'>appropriateness</Link></li>
+                        <li><Link onClick={handleLinkClick} href={'/about'} className='grid font-mono capitalize text-white text-xs py-4'>about us</Link></li>
                     </ul>
                 </div>
             </div>
