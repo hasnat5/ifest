@@ -20,25 +20,25 @@ const About = () => {
     return (
         <main className='container min-w-full'>
             {/* HERO */}
-            <section className='grid gap-12 px-6 pt-32 pb-16 text-center'>
-                <div className='grid gap-4'>
+            <section className='grid gap-12 px-6 pt-32 pb-16 text-center md:px-12 md:py-20 lg:px-32 lg:py-28'>
+                <div className='grid gap-4 lg:gap-6 justify-items-center'>
                     <h1>Who Are We ?</h1>
                     <p>Sit at urna amet elementum ullamcorper hendrerit arcu interdum fermentum leo nisl sapien aliquam proin id purus tellus condimentum integer dolor sit amet consector.</p>
                     <Button />
                 </div>
 
-                <div className='grid gap-4 grid-rows-2 grid-flow-col max-h-96'>
-                    <div className='bg-about1 bg-cover bg-left row-span-2 rounded-lg h-80'>
+                <div className='grid gap-4 grid-rows-2 grid-flow-col max-h-96 lg:gap-6 lg:grid-rows-1 lg:grid-cols-3 lg:grid-flow-dense'>
+                    <div className='bg-about1 bg-cover bg-left row-span-2 rounded-lg h-80 lg:mt-16'>
                     </div>
-                    <div className='bg-about2 bg-cover bg-center rounded-lg'>
+                    <div className='bg-about2 bg-cover bg-center rounded-lg lg:h-80'>
                     </div>
-                    <div className='bg-about3 bg-cover bg-center rounded-lg'>
+                    <div className='bg-about3 bg-cover bg-center rounded-lg lg:h-64'>
                     </div>
                 </div>
             </section>
 
             {/* STORY */}
-            <section className='grid gap-6 py-12 px-6'>
+            <section className='grid gap-6 py-12 px-6 md:px-12 md:py-20 lg:px-32 lg:py-28 lg:grid-cols-2 lg:items-center'>
                 <div className='grid gap-4'>
                     <h2>The <span style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='bg-clip-text text-transparent'>story</span> behind OrbitDebt</h2>
                     <p>Sit at urna amet elementum ullamcorper hendrerit arcu interdum fermentum leo nisl sapien aliquam proin id purus tellus condimentum integer dolor sit amet consector.</p>
@@ -56,13 +56,13 @@ const About = () => {
             </section>
 
             {/* MISSION */}
-            <section className='grid gap-4 py-12 px-6'>
+            <section className='grid gap-4 py-12 px-6 md:px-12 md:py-20 lg:px-32 lg:py-28 lg:text-center'>
                 <h2>Our <span style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='bg-clip-text text-transparent'>Mission</span></h2>
                 <p>We are committed to delivering the best voice support across diverse industries, including education, audiobooks, gaming, movies, and real-time conversations. Our goal is to provide unparalleled voice assistance, enabling seamless communication and understanding among global audiences.</p>
             </section>
 
             {/* TEAM */}
-            <section className='grid gap-6 py-12 px-6'>
+            <section className='grid gap-6 py-12 px-6 md:px-12 md:py-20 lg:px-32 lg:py-28'>
                 <div className='grid gap-16'>
                     <h2>Faces behind <span style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='bg-clip-text text-transparent'>OrbitDebt</span></h2>
 
@@ -79,7 +79,7 @@ const About = () => {
                 </div>
 
 
-                <div className='grid gap-6'>
+                <div className='grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8'>
                     {shuffledTeamData.map((data, key) => {
                         return (
                             <Team image={data.image} name={data.name} about={data.about} role={data.role} key={key} social={data.social} />
@@ -89,7 +89,7 @@ const About = () => {
                 </div>
             </section>
 
-            <section className='grid py-12 px-6'>
+            <section className='grid py-12 px-6 md:px-12 md:py-20 lg:px-32'>
                 <CTA />
             </section>
         </main>

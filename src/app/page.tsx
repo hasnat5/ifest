@@ -120,13 +120,13 @@ export default function Home() {
 		<main className='container min-w-full bg-[#0A090F]'>
 
 			{/* BANNER */}
-			<section className='bgjumbotron grid gap-6 px-6 py-16 h-screen min-h-[666px] lg:grid-cols-2'>
-				<div className='text-center grid gap-6 content-center order-last md:order-1'>
+			<section className='bgjumbotron grid gap-6 px-6 py-16 h-screen min-h-full md:px-12 lg:grid-cols-2 lg:px-32 lg:py-0 lg:min-h-screen lg:gap-12'>
+				<div className='text-center grid gap-6 content-center order-last lg:order-1 lg:text-start'>
 					<h1><span style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='bg-clip-text text-transparent'>EasyDebt</span> With AI</h1>
 					<p>Memberdayakan Anda dalam memantau utang dan merencanakan strategi pelunasan yang lebih cerdas.</p>
 					<Button />
 				</div>
-				<div className='grid justify-center content-center h-full md:order-1'>
+				<div className='grid justify-center content-center h-full lg:order-1'>
 					<Image
 						src="/assets/images/debt.webp"
 						alt="OrbitDebt Banner"
@@ -145,8 +145,8 @@ export default function Home() {
 			</section>
 
 			{/* ABOUT */}
-			<section className='grid gap-6 px-6 py-12 h-screen min-h-[666px] lg:grid-cols-2'>
-				<div className='text-center grid gap-6 content-center order-last md:order-1'>
+			<section className='grid gap-6 px-6 py-12 md:py-20 md:px-12 md:gap-12 lg:grid-cols-2 lg:px-32 lg:py-28'>
+				<div className='text-center grid gap-6 content-center order-last md:order-1 lg:text-start'>
 					<h2>Why <span style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='bg-clip-text text-transparent'>EasyDebt</span>?</h2>
 					<p>Dengan menggunakan kecerdasan buatan (AI), membantu memberikan strategi pelunasan yang disesuaikan dengan situasi keuangan pengguna dan membantu mereka mencapai tujuan pelunasan utang dengan lebih baik.</p>
 				</div>
@@ -164,14 +164,14 @@ export default function Home() {
 			</section>
 
 			{/* BENEFITS */}
-			<section className='grid gap-6 px-6 py-12'>
-				<div className='grid gap-4 text-center'>
+			<section className='grid gap-6 px-6 py-12 md:py-20 md:px-12 lg:px-32 lg:py-28 lg:gap-12'>
+				<div className='grid gap-4 text-center lg:gap-6'>
 					<h2>Elevate Your <span style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='bg-clip-text text-transparent'>Repayment</span></h2>
 					<p>Tingkatkan perencanaan pembayaran utang. Buat pandangan jelas tentang langkah-langkah pembayaran dengan AI</p>
 				</div>
 
 
-				<div className='grid gap-6'>
+				<div className='grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8'>
 					{dataFAQ.map((data, key) => {
 						return (
 							<Benefit key={key} title={data.title} description={data.description} />
@@ -186,7 +186,7 @@ export default function Home() {
 			</section>
 
 			{/* FAQ */}
-			<section className='grid gap-6 px-6 py-12'>
+			<section className='grid gap-6 px-6 py-12 md:py-20 md:px-12 lg:px-32 lg:py-28'>
 				<div className='grid gap-4 text-center'>
 					<h2>Frequently Asked Question</h2>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -202,7 +202,7 @@ export default function Home() {
 			</section>
 
 
-			<section className='grid py-12 px-6'>
+			<section className='grid py-12 px-6 md:py-20 md:px-12 lg:px-32'>
 				<CTA />
 			</section>
 		</main>

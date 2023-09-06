@@ -24,7 +24,7 @@
     @apply font-sans text-white text-3xl md:text-5xl
   }
   h3{
-    @apply font-sans text-white text-xl md:text-3xl
+    @apply font-sans text-white text-xl md:text-xl
   }
   h4{
     @apply font-mono text-tertiary text-base md:text-xl
