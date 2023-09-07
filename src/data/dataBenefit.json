@@ -1,40 +1,17 @@
 [
     {
-        "date": "JUNE — PRESENT",
-        "employment": "Lead Developer",
-        "company": "Virtuwed",
-        "link": "https://virtuwed.id",
-        "description": "Leading and guiding the development team to build software products, executing the design plan, and implementing the Virtuwed product package.",
-        "tech": [
-            "next",
-            "typescript",
-            "three",
-            "graphql"
-        ]
+        "title": "Langkah Strategis",
+        "description": "OrbitDebt menggunakan teknologi kecerdasan buatan (AI) untuk menganalisis situasi keuangan Anda secara menyeluruh. Selain itu, OrbitDebt membantu pengecekan kelayakan pinjaman sehingga anda dapat membuat keputusan.",
+        "icon": "fluent:step-16-filled"
     },
     {
-        "date": "FEB — JULY 2023",
-        "employment": "Frontend Developer",
-        "company": "Insan",
-        "link": "https: //www.inagri.asia",
-        "description": "Developed and maintained corporate websites to ensure an attractive online presence, while also designing and developing state-of-the-art mobile applications specifically tailored for our flagship products.",
-        "tech": [
-            "next",
-            "javascript",
-            "react native",
-            "tailwind"
-        ]
+        "title": "Hemat waktu",
+        "description": "OrbitDebt merancang rencana pembayaran pinjaman Anda secara otomatis, menghemat waktu Anda untuk merencanakan strategi pembayaran.",
+        "icon": "ri:time-fill"
     },
     {
-        "date": "AUG 2022 — PRESENT",
-        "employment": "CTO",
-        "company": "Cobadulu Academy",
-        "link": "https: //www.cobadulu.academy",
-        "description": "Lead technology strategy, design and build the online educational platform, manage infrastructure, ensure data security, integrate educational technologies, and use data analytics for continuous improvement.",
-        "tech": [
-            "nodejs",
-            "javascript",
-            "tailwind"
-        ]
+        "title": "Personalisasi",
+        "description": "Solusi yang kami berikan disesuaikan dengan situasi dan tujuan keuangan Anda. Ini memastikan bahwa rencana pembayaran Anda sesuai dengan kebutuhan dan kemampuan Anda.",
+        "icon": "entypo:round-brush"
     }
 ]

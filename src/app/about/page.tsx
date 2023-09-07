@@ -23,7 +23,8 @@ const About = () => {
             <section className='grid gap-12 px-6 pt-32 pb-16 text-center md:px-12 md:py-20 lg:px-32 lg:py-28'>
                 <div className='grid gap-4 lg:gap-6 text-center lg:justify-items-center w-full'>
                     <h1>Who Are We ?</h1>
-                    <p>Sit at urna amet elementum ullamcorper hendrerit arcu interdum fermentum leo nisl sapien aliquam proin id purus tellus condimentum integer dolor sit amet consector.</p>
+                    <p className='max-w-3xl'>Kami adalah 4 sahabat yang juga anggota Orbit, sebuah ekskul yang memiliki misi istimewa. Orbit adalah singkatan dari "Organization of Basic Informatics Technology".
+                    </p>
                     <Button />
                 </div>
 
@@ -39,9 +40,14 @@ const About = () => {
 
             {/* STORY */}
             <section className='grid gap-6 py-12 px-6 md:px-12 md:py-20 lg:px-32 lg:py-28 lg:grid-cols-2 lg:items-center'>
-                <div className='grid gap-4'>
+                <div className='grid gap-4 md:gap-6'>
                     <h2>The <span style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='bg-clip-text text-transparent'>story</span> behind OrbitDebt</h2>
-                    <p>Sit at urna amet elementum ullamcorper hendrerit arcu interdum fermentum leo nisl sapien aliquam proin id purus tellus condimentum integer dolor sit amet consector.</p>
+
+                    <p>
+                        Suatu hari, ketika kami berkumpul untuk proyek lomba mereka di sekolah, salah seorang anggota kami membayangkan sebuah alat yang dapat menganalisis situasi keuangan seseorang, pengecekan kelayakan peminjaman pengguna dengan menggabungkan data dan rekomendasi yang dapat membantu mereka membuat rencana pelunasan yang efektif.
+                        <br /><br />
+                        Kami mempelajari tentang teknologi AI, privasi data, dan membuat rancangan antarmuka. Meskipun banyak rintangan, kami bertekad untuk membantu orang-orang yang sedang berjuang dengan hutang.
+                    </p>
                 </div>
 
                 <Image
@@ -56,9 +62,11 @@ const About = () => {
             </section>
 
             {/* MISSION */}
-            <section className='grid gap-4 py-12 px-6 md:px-12 md:py-20 lg:px-32 lg:py-28 lg:text-center'>
+            <section className='grid gap-4 py-12 px-6 md:gap-6 md:px-12 md:py-20 lg:px-32 lg:py-28 lg:text-center'>
                 <h2>Our <span style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='bg-clip-text text-transparent'>Mission</span></h2>
-                <p>We are committed to delivering the best voice support across diverse industries, including education, audiobooks, gaming, movies, and real-time conversations. Our goal is to provide unparalleled voice assistance, enabling seamless communication and understanding among global audiences.</p>
+                <p>
+                    Misi kami adalah memberdayakan individu dengan alat yang mereka butuhkan untuk merencanakan masa depan finansial yang lebih cerah dan mencapai kebebasan dari beban hutang. Kami ingin menjadi mitra yang terpercaya dalam perjalanan mereka menuju kebebasan finansial dan memberikan dampak positif dalam komunitas kami dan di seluruh dunia.
+                </p>
             </section>
 
             {/* TEAM */}

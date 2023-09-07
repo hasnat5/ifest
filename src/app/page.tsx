@@ -1,6 +1,7 @@
 import { Button } from '@/components/Button'
 import Image from 'next/image'
 import Benefit from '@/components/Benefit';
+import dataBenefit from '../data/dataBenefit.json';
 import dataFAQ from '../data/dataFAQ.json';
 import FAQ from '@/components/FAQ';
 import Partner from '@/components/Partner';
@@ -122,8 +123,8 @@ export default function Home() {
 			{/* BANNER */}
 			<section className='bgjumbotron grid gap-6 px-6 py-16 h-screen min-h-full md:px-12 lg:grid-cols-2 lg:px-32 lg:py-0 lg:min-h-screen lg:gap-12'>
 				<div className='text-center grid gap-6 content-center order-last lg:order-1 lg:text-start'>
-					<h1><span style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='bg-clip-text text-transparent'>EasyDebt</span> With AI</h1>
-					<p>Memberdayakan Anda dalam memantau utang dan merencanakan strategi pelunasan yang lebih cerdas.</p>
+					<h1><span style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='bg-clip-text text-transparent'>OrbitDebt</span> AI</h1>
+					<p>Solusi Pelunasan Pinjaman Strategis yang Dirancang Untuk Anda.</p>
 					<Button />
 				</div>
 				<div className='grid justify-center content-center h-full lg:order-1'>
@@ -147,8 +148,10 @@ export default function Home() {
 			{/* ABOUT */}
 			<section className='grid gap-6 px-6 py-12 md:py-20 md:px-12 md:gap-12 lg:grid-cols-2 lg:px-32 lg:py-28'>
 				<div className='text-center grid gap-6 content-center order-last md:order-1 lg:text-start'>
-					<h2>Why <span style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='bg-clip-text text-transparent'>EasyDebt</span>?</h2>
-					<p>Dengan menggunakan kecerdasan buatan (AI), membantu memberikan strategi pelunasan yang disesuaikan dengan situasi keuangan pengguna dan membantu mereka mencapai tujuan pelunasan utang dengan lebih baik.</p>
+					<h2>Kenapa <span style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='bg-clip-text text-transparent'>OrbitDebt</span>?</h2>
+					<p>Dengan memanfaatkan teknologi kecerdasan buatan, OrbitDebt memungkinkan pengguna merencanakan strategi pelunasan pembayaran pinjaman.
+						<br /><br />
+						Tak hanya itu, OrbitDebt mampu melakukan pengecekan kelayakan peminjaman pengguna guna menghindari tunggakan biaya pinjaman dengan memperkirakan anggaran keuangan pengguna, sehingga menjadikan pengelolaan pinjaman lebih terkendali dan berkelanjutan.</p>
 				</div>
 				<div className='grid justify-center content-center h-full md:order-1'>
 					<Image
@@ -166,15 +169,15 @@ export default function Home() {
 			{/* BENEFITS */}
 			<section className='grid gap-6 px-6 py-12 md:py-20 md:px-12 lg:px-32 lg:py-28 lg:gap-12'>
 				<div className='grid gap-4 text-center lg:gap-6'>
-					<h2>Elevate Your <span style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='bg-clip-text text-transparent'>Repayment</span></h2>
+					<h2>Tingkatkan <span style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='bg-clip-text text-transparent'>pembayaran</span> Anda</h2>
 					<p>Tingkatkan perencanaan pembayaran utang. Buat pandangan jelas tentang langkah-langkah pembayaran dengan AI</p>
 				</div>
 
 
 				<div className='grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8'>
-					{dataFAQ.map((data, key) => {
+					{dataBenefit.map((data, key) => {
 						return (
-							<Benefit key={key} title={data.title} description={data.description} />
+							<Benefit key={key} title={data.title} description={data.description} icon={data.icon} />
 						)
 					})}
 				</div>

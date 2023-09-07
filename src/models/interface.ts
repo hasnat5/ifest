@@ -6,6 +6,7 @@ export interface FAQ {
 export interface Benefit {
     title: string;
     description: string;
+    icon: string;
 }
 
 export interface TeamDataType {

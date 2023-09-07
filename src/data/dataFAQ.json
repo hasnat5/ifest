@@ -1,14 +1,18 @@
 [
     {
         "title": "Apa itu OrbitDebt?",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui."
+        "description": "OrbitDebt adalah platform pelunasan pinjaman berbasis kecerdasan buatan (AI) yang dirancang untuk membantu individu mengelola dan melunasi pinjaman mereka dengan lebih efisien. Ini menggabungkan teknologi AI dengan analisis keuangan yang disesuaikan dengan situasi keuangan masing-masing pengguna."
     },
     {
-        "title": "Bagaimana OrbitDebt dapat membantu?",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, dolorem! Molestias qui deserunt molestiae nisi."
+        "title": "Bagaimana OrbitDebt bekerja?",
+        "description": "OrbitDebt bekerja dengan mengumpulkan informasi tentang pinjaman-pinjaman Anda dan situasi keuangan Anda. Kemudian, AI menganalisis data ini untuk pengecekan kelayakan peminjaman dana agar pengguna terhindar dari risiko tunggakan biaya. Selanjutnya AI menganalisis data ini untuk merancang rencana pelunasan yang efektif."
     },
     {
-        "title": "Bagaimana keamanan data saya?",
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, nam harum?"
+        "title": "Apakah Informasi Keuangan Saya Aman dengan OrbitDebt?",
+        "description": "Ya, keamanan data Anda adalah prioritas utama kami. OrbitDebt mengambil langkah-langkah untuk melindungi informasi keuangan Anda dan menjaga kerahasiaannya. Kami mematuhi standar keamanan data yang ketat."
+    },
+    {
+        "title": "Apakah Saya Perlu Mengunduh Perangkat Lunak untuk Menggunakan OrbitDebt?",
+        "description": "Tidak, Anda tidak perlu mengunduh perangkat lunak apa pun. OrbitDebt adalah platform berbasis web yang dapat diakses melalui browser Anda. Ini memudahkan Anda untuk menggunakannya kapan saja dan di mana saja."
     }
 ]
