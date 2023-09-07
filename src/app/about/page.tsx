@@ -21,7 +21,7 @@ const About = () => {
         <main className='container min-w-full'>
             {/* HERO */}
             <section className='grid gap-12 px-6 pt-32 pb-16 text-center md:px-12 md:py-20 lg:px-32 lg:py-28'>
-                <div className='grid gap-4 lg:gap-6 justify-items-center'>
+                <div className='grid gap-4 lg:gap-6 text-center lg:justify-items-center w-full'>
                     <h1>Who Are We ?</h1>
                     <p>Sit at urna amet elementum ullamcorper hendrerit arcu interdum fermentum leo nisl sapien aliquam proin id purus tellus condimentum integer dolor sit amet consector.</p>
                     <Button />
