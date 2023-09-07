@@ -26,14 +26,14 @@ const Footer: React.FC = () => {
                 {/* MENU */}
                 <section className='grid gap-8 items-start w-full lg:grid-flow-col lg:col-span-7 lg:gap-10'>
                     <div className='grid gap-3 w-fit'>
-                        <h4>PAGE</h4>
+                        <h5>PAGE</h5>
                         <a href="/" className='footerLink'>Home</a>
                         <a href="/" className='footerLink'>Repayment</a>
                         <a href="/" className='footerLink'>Appropriateness</a>
                         <a href="/about" className='footerLink'>About</a>
                     </div>
                     <div className='grid gap-3 w-fit'>
-                        <h4>MEDIA SOSIAL</h4>
+                        <h5>MEDIA SOSIAL</h5>
                         <a href="https://www.instagram.com/orbit4it/" target='_blank' className='footerLink flex items-start gap-3'>
                             <Icon icon="bxl:instagram-alt" className='text-xl' />
                             Instagram
@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
                         </a>
                     </div>
                     <div className='grid gap-3'>
-                        <h4>CONTACT US</h4>
+                        <h5>CONTACT US</h5>
                         <a href="mailto:orbit.smkn4bdg@gmail.com" target='_blank' className='footerLink flex items-start gap-3'>
                             <Icon icon="fluent:mail-16-filled" className='text-xl' />
                             <span className='w-full'>
