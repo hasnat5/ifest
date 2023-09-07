@@ -146,7 +146,7 @@
   }  
 
   .footerLink{
-    @apply font-sans text-white text-base
+    @apply font-sans text-white text-base capitalize
   }
 
   .bgjumbotron{

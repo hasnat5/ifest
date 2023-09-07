@@ -6,10 +6,10 @@ import { Icon } from '@iconify/react';
 
 const Footer: React.FC = () => {
     return (
-        <footer className='container min-w-full bg-[#0A090F] bg-box-string bg-cover border-t border-[#353539] bg-center px-6 lg:px-20'>
-            <div className='grid py-16 gap-y-20 lg:gap-y-0 lg:gap-6 grid-cols-12 items-start mx-auto w-full max-w-screen-xl'>
+        <footer className='container min-w-full bg-[#0A090F] bg-box-string bg-cover border-t border-[#353539] bg-center px-6 md:px-12 lg:px-32'>
+            <div className='grid py-16 gap-y-20 items-start mx-auto w-full max-w-screen-xl lg:gap-y-0 lg:grid-cols-12 lg:justify-between'>
                 {/* LOGO */}
-                <section className='grid gap-10 col-span-full lg:col-span-6'>
+                <section className='grid gap-10 lg:col-span-5'>
                     <div className='flex gap-x-4 items-center'>
                         <Image
                             src="/image/Logo-Upgradia-White.svg"
@@ -18,21 +18,22 @@ const Footer: React.FC = () => {
                             height={56}
                             priority
                         />
-                        <h2 className='text-white'>OrbitDebt</h2>
+                        <h3 className='text-white'>OrbitDebt</h3>
                     </div>
 
                 </section>
 
                 {/* MENU */}
-                <section className='grid gap-8 lg:gap-6 col-span-full items-start lg:grid-cols-6 lg:col-span-6'>
-                    <div className='grid gap-3 lg:col-span-2'>
-                        <h4 >PAGE</h4>
+                <section className='grid gap-8 items-start w-full lg:grid-flow-col lg:col-span-7 lg:gap-10'>
+                    <div className='grid gap-3 w-fit'>
+                        <h4>PAGE</h4>
                         <a href="/" className='footerLink'>Home</a>
                         <a href="/" className='footerLink'>Repayment</a>
+                        <a href="/" className='footerLink'>Appropriateness</a>
                         <a href="/about" className='footerLink'>About</a>
                     </div>
-                    <div className='grid gap-3 lg:col-span-2'>
-                        <h4 >MEDIA SOSIAL</h4>
+                    <div className='grid gap-3 w-fit'>
+                        <h4>MEDIA SOSIAL</h4>
                         <a href="https://www.instagram.com/orbit4it/" target='_blank' className='footerLink flex items-start gap-3'>
                             <Icon icon="bxl:instagram-alt" className='text-xl' />
                             Instagram
@@ -42,8 +43,8 @@ const Footer: React.FC = () => {
                             LinkedIn
                         </a>
                     </div>
-                    <div className='grid gap-3 lg:col-span-2'>
-                        <h4 >CONTACT US</h4>
+                    <div className='grid gap-3'>
+                        <h4>CONTACT US</h4>
                         <a href="mailto:orbit.smkn4bdg@gmail.com" target='_blank' className='footerLink flex items-start gap-3'>
                             <Icon icon="fluent:mail-16-filled" className='text-xl' />
                             <span className='w-full'>
