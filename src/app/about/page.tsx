@@ -22,7 +22,7 @@ const About = () => {
             {/* HERO */}
             <section className='grid gap-12 px-6 pt-32 pb-16 text-center md:px-12 md:py-20 lg:px-32 lg:py-28'>
                 <div className='grid gap-4 lg:gap-6 text-center lg:justify-items-center w-full'>
-                    <h1>Who Are We ?</h1>
+                    <h1>Siapa Kami?</h1>
                     <p className='max-w-3xl'>Kami adalah 4 sahabat yang juga anggota Orbit, sebuah ekskul yang memiliki misi istimewa. Orbit adalah singkatan dari &quot;Organization of Basic Informatics Technology&quot;.
                     </p>
                     <Button />
@@ -41,7 +41,7 @@ const About = () => {
             {/* STORY */}
             <section className='grid gap-6 py-12 px-6 md:px-12 md:py-20 lg:px-32 lg:py-28 lg:grid-cols-2 lg:items-center'>
                 <div className='grid gap-4 md:gap-6'>
-                    <h2>The <span style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='bg-clip-text text-transparent'>story</span> behind OrbitDebt</h2>
+                    <h2><span style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='bg-clip-text text-transparent'>Cerita </span>dibalik OrbitDebt</h2>
 
                     <p>
                         Suatu hari, ketika kami berkumpul untuk proyek lomba mereka di sekolah, salah seorang anggota kami membayangkan sebuah alat yang dapat menganalisis situasi keuangan seseorang, pengecekan kelayakan peminjaman pengguna dengan menggabungkan data dan rekomendasi yang dapat membantu mereka membuat rencana pelunasan yang efektif.
@@ -63,7 +63,7 @@ const About = () => {
 
             {/* MISSION */}
             <section className='grid gap-4 py-12 px-6 md:gap-6 md:px-12 md:py-20 lg:px-32 lg:py-28 lg:text-center'>
-                <h2>Our <span style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='bg-clip-text text-transparent'>Mission</span></h2>
+                <h2><span style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='bg-clip-text text-transparent'>Misi</span> Kami</h2>
                 <p>
                     Misi kami adalah memberdayakan individu dengan alat yang mereka butuhkan untuk merencanakan masa depan finansial yang lebih cerah dan mencapai kebebasan dari beban hutang. Kami ingin menjadi mitra yang terpercaya dalam perjalanan mereka menuju kebebasan finansial dan memberikan dampak positif dalam komunitas kami dan di seluruh dunia.
                 </p>
@@ -72,7 +72,7 @@ const About = () => {
             {/* TEAM */}
             <section className='grid gap-6 py-12 px-6 md:px-12 md:py-20 lg:px-32 lg:py-28'>
                 <div className='grid gap-16'>
-                    <h2>Faces behind <span style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='bg-clip-text text-transparent'>OrbitDebt</span></h2>
+                    <h2>Wajah dibalik <span style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='bg-clip-text text-transparent'>OrbitDebt</span></h2>
 
                     <div className='flex items-center gap-3.5'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="6" height="5.3" viewBox="0 0 10 9" fill="none">
@@ -81,7 +81,7 @@ const About = () => {
                                 fill={"#efefe599"}
                             />
                         </svg>
-                        <h4 className='uppercase'>the team</h4>
+                        <h4 className='uppercase'>anggota tim</h4>
                         <span className='text-xs text-tertiary flex items-center mb-0.5'>[4]</span>
                     </div>
                 </div>
