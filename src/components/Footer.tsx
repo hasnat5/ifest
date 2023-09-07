@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
                         <h5>CONTACT US</h5>
                         <a href="mailto:orbit.smkn4bdg@gmail.com" target='_blank' className='footerLink flex items-start gap-3'>
                             <Icon icon="fluent:mail-16-filled" className='text-xl' />
-                            <span className='w-full'>
+                            <span className='w-full lowercase'>
                                 orbit.smkn4bdg@gmail.com
                             </span>
                         </a>
