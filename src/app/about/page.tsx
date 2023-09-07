@@ -23,7 +23,7 @@ const About = () => {
             <section className='grid gap-12 px-6 pt-32 pb-16 text-center md:px-12 md:py-20 lg:px-32 lg:py-28'>
                 <div className='grid gap-4 lg:gap-6 text-center lg:justify-items-center w-full'>
                     <h1>Who Are We ?</h1>
-                    <p className='max-w-3xl'>Kami adalah 4 sahabat yang juga anggota Orbit, sebuah ekskul yang memiliki misi istimewa. Orbit adalah singkatan dari "Organization of Basic Informatics Technology".
+                    <p className='max-w-3xl'>Kami adalah 4 sahabat yang juga anggota Orbit, sebuah ekskul yang memiliki misi istimewa. Orbit adalah singkatan dari &quot;Organization of Basic Informatics Technology&quot;.
                     </p>
                     <Button />
                 </div>
