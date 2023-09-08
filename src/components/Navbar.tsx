@@ -51,15 +51,16 @@ const Navbar = () => {
         <nav className='w-full fixed top-0 z-50'>
             <div className={`flex py-1.5 items-center justify-between pl-6 pr-3 transition duration-300 md:pl-12 md:pr-9 lg:px-32
             ${scrolling || isOpen ? 'bg-[#0A090F] border-b border-[#353539]' : ''}`}>
-                <a href="/" className='z-10'>
+                <a href="/" className='z-10 flex items-center gap-2'>
                     <Image
-                        src="/assets/images/partnership/upgradia.svg"
+                        src="/assets/images/logo/orbitdebt.png"
                         alt="OrbitDebt Logo"
-                        className="h-8 w-auto"
-                        width={220}
-                        height={220}
+                        className="h-6 w-auto"
+                        width={512}
+                        height={512}
                         priority
                     />
+                    <h4 className='font-sans mt-1 text-white'>OrbitDebt</h4>
                 </a>
 
                 <div className='z-10 lg:hidden'>

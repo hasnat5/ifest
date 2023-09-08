@@ -12,13 +12,14 @@ const Footer: React.FC = () => {
                 <section className='grid gap-10 lg:col-span-5'>
                     <div className='flex gap-x-4 items-center'>
                         <Image
-                            src="/image/Logo-Upgradia-White.svg"
+                            src="/assets/images/logo/orbitdebt.png"
                             alt="Upgradia Logo"
-                            width={48}
-                            height={56}
+                            className='h-12 w-auto'
+                            width={512}
+                            height={512}
                             priority
                         />
-                        <h3 className='text-white'>OrbitDebt</h3>
+                        <h3 className='text-white text-4xl mt-1'>OrbitDebt</h3>
                     </div>
 
                 </section>
