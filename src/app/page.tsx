@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Benefit from '@/components/Benefit';
 import dataBenefit from '../data/dataBenefit.json';
 import dataFAQ from '../data/dataFAQ.json';
+import dataPartner from '../data/dataPartner.json';
 import FAQ from '@/components/FAQ';
 import Partner from '@/components/Partner';
 import CTA from '@/components/CTA';
@@ -127,11 +128,20 @@ export default function Home() {
 					<p>Solusi Pelunasan Pinjaman Strategis yang Dirancang Untuk Anda.</p>
 					<Button />
 				</div>
-				<div className='grid justify-center content-center h-full lg:order-1'>
-					<Image
+				<div className='grid justify-center content-center w-full h-full lg:order-1'>
+					{/* <Image
 						src="/assets/images/debt.webp"
 						alt="OrbitDebt Banner"
 						className="w-full h-auto"
+						width={1468}
+						height={1268}
+						quality={100}
+						priority
+					/> */}
+					<Image
+						src="/assets/images/banner.gif"
+						alt="OrbitDebt Banner"
+						className="min-w-full h-auto"
 						width={1468}
 						height={1268}
 						quality={100}
@@ -142,7 +152,28 @@ export default function Home() {
 
 			{/* PARTNER */}
 			<section className="w-full grid border-y border-[#353539] h-full">
-				<Partner />
+				<div className='md:hidden'>
+					<Partner />
+				</div>
+				<div className='hidden md:flex gap-6 justify-center'>
+					{dataPartner.map((data, key) => {
+						return (
+							<a key={key} className='py-8' target='_blank' href={data.link}>
+								<Image
+									className='mx-4 self-center transition duration-150 ease-in-out grayscale hover:grayscale-0'
+									src={data.img}
+									width={data.width}
+									height={data.height}
+									alt="partner OrbitDebt"
+									quality={100}
+									priority
+									sizes='100%'
+								/>
+							</a>
+						)
+					})}
+
+				</div>
 			</section>
 
 			{/* ABOUT */}
@@ -154,10 +185,19 @@ export default function Home() {
 						Tak hanya itu, OrbitDebt mampu melakukan pengecekan kelayakan peminjaman pengguna guna menghindari tunggakan biaya pinjaman dengan memperkirakan anggaran keuangan pengguna, sehingga menjadikan pengelolaan pinjaman lebih terkendali dan berkelanjutan.</p>
 				</div>
 				<div className='grid justify-center content-center h-full md:order-1'>
-					<Image
+					{/* <Image
 						src="/assets/images/credit_card.png"
 						alt="About OrbitDebt"
 						className="w-full h-auto"
+						width={1468}
+						height={1268}
+						quality={100}
+						priority
+					/> */}
+					<Image
+						src="/assets/images/about.gif"
+						alt="About OrbitDebt"
+						className="h-auto min-w-full"
 						width={1468}
 						height={1268}
 						quality={100}
