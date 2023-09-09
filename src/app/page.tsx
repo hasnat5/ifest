@@ -125,21 +125,21 @@ export default function Home() {
 			<section className='bgjumbotron grid gap-6 px-6 py-16 h-screen min-h-full md:px-12 lg:grid-cols-2 lg:px-32 lg:py-0 lg:min-h-screen lg:gap-12'>
 				<div className='text-center grid gap-6 content-center order-last lg:order-1 lg:text-start'>
 					<h1><span style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='bg-clip-text text-transparent'>OrbitDebt</span> AI</h1>
-					<p>Solusi Pelunasan Pinjaman Strategis yang Dirancang Untuk Anda.</p>
+					<p>Temukan Kemampuan Pinjaman Anda: Solusi Pelunasan Strategis yang Dirancang sesuai Kelayakan Finansial Anda.</p>
 					<Button />
 				</div>
 				<div className='grid justify-center content-center w-full h-full lg:order-1'>
 					{/* <Image
-						src="/assets/images/debt.webp"
+						src="/assets/images/banner.gif"
 						alt="OrbitDebt Banner"
-						className="w-full h-auto"
+						className="min-w-full h-auto"
 						width={1468}
 						height={1268}
 						quality={100}
 						priority
 					/> */}
 					<Image
-						src="/assets/images/banner.gif"
+						src="/assets/images/banner.png"
 						alt="OrbitDebt Banner"
 						className="min-w-full h-auto"
 						width={1468}
@@ -180,22 +180,15 @@ export default function Home() {
 			<section className='grid gap-6 px-6 py-12 md:py-20 md:px-12 md:gap-12 lg:grid-cols-2 lg:px-32 lg:py-28'>
 				<div className='text-center grid gap-6 content-center order-last md:order-1 lg:text-start'>
 					<h2>Kenapa <span style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='bg-clip-text text-transparent'>OrbitDebt</span>?</h2>
-					<p>Dengan memanfaatkan teknologi kecerdasan buatan, OrbitDebt memungkinkan pengguna merencanakan strategi pelunasan pembayaran pinjaman.
+					<p>
+						Dengan memanfaatkan teknologi kecerdasan buatan, OrbitDebt memungkinkan pengguna melakukan pengecekan kelayakan peminjaman secara cermat.
 						<br /><br />
-						Tak hanya itu, OrbitDebt mampu melakukan pengecekan kelayakan peminjaman pengguna guna menghindari tunggakan biaya pinjaman dengan memperkirakan anggaran keuangan pengguna, sehingga menjadikan pengelolaan pinjaman lebih terkendali dan berkelanjutan.</p>
+						Fitur utama kami membantu Anda menghindari tunggakan biaya pinjaman dengan memperkirakan anggaran keuangan pengguna. Dengan ini, OrbitDebt menjadikan pengelolaan pinjaman lebih terkendali dan berkelanjutan, memberikan Anda rasa yakin dalam perencanaan strategi pelunasan pinjaman yang efektif.
+					</p>
 				</div>
 				<div className='grid justify-center content-center h-full md:order-1'>
-					{/* <Image
-						src="/assets/images/credit_card.png"
-						alt="About OrbitDebt"
-						className="w-full h-auto"
-						width={1468}
-						height={1268}
-						quality={100}
-						priority
-					/> */}
 					<Image
-						src="/assets/images/about.gif"
+						src="/assets/images/about.png"
 						alt="About OrbitDebt"
 						className="h-auto min-w-full"
 						width={1468}
@@ -203,18 +196,27 @@ export default function Home() {
 						quality={100}
 						priority
 					/>
+					{/* <Image
+						src="/assets/images/about.gif"
+						alt="About OrbitDebt"
+						className="h-auto min-w-full"
+						width={1468}
+						height={1268}
+						quality={100}
+						priority
+					/> */}
 				</div>
 			</section>
 
 			{/* BENEFITS */}
 			<section className='grid gap-6 px-6 py-12 md:py-20 md:px-12 lg:px-32 lg:py-28 lg:gap-12'>
-				<div className='grid gap-4 text-center lg:gap-6'>
-					<h2>Tingkatkan <span style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='bg-clip-text text-transparent'>pembayaran</span> Anda</h2>
-					<p>Tingkatkan perencanaan pembayaran utang. Buat pandangan jelas tentang langkah-langkah pembayaran dengan AI</p>
+				<div className='grid gap-4 justify-center text-center lg:gap-6'>
+					<h2>Tingkatkan <span style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='bg-clip-text text-transparent'>perencanaan</span> Anda</h2>
+					<p className='max-w-3xl'>Tingkatkan perencanaan pengambilan utang. Buat pandangan jelas tentang langkah-langkah pembayaran dengan AI</p>
 				</div>
 
 
-				<div className='grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8'>
+				<div className='grid gap-8 md:grid-cols-2 lg:grid-cols-3 md:gap-10 lg:gap-12'>
 					{dataBenefit.map((data, key) => {
 						return (
 							<Benefit key={key} title={data.title} description={data.description} icon={data.icon} />

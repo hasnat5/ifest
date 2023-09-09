@@ -24,10 +24,10 @@
     @apply font-sans text-white text-3xl md:text-5xl
   }
   h3{
-    @apply font-sans text-white text-xl md:text-xl
+    @apply font-sans text-white text-xl md:text-2xl
   }
   h4{
-    @apply font-mono text-tertiary text-base md:text-xl
+    @apply font-mono text-tertiary text-lg md:text-xl
   }
   h5{
     @apply font-mono text-tertiary text-xs md:text-base

@@ -44,9 +44,9 @@ const About = () => {
                     <h2><span style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='bg-clip-text text-transparent'>Cerita </span>dibalik OrbitDebt</h2>
 
                     <p>
-                        Suatu hari, ketika kami berkumpul untuk proyek lomba mereka di sekolah, salah seorang anggota kami membayangkan sebuah alat yang dapat menganalisis situasi keuangan seseorang, pengecekan kelayakan peminjaman pengguna dengan menggabungkan data dan rekomendasi yang dapat membantu mereka membuat rencana pelunasan yang efektif.
+                        Suatu hari, ketika kami berkumpul untuk proyek lomba mereka di sekolah, salah seorang anggota kami membayangkan sebuah alat yang dapat melakukan pengecekan kelayakan peminjaman dengan bantuan AI. Dengan data keuangan yang dianalisis secara cermat, OrbitDebt dapat memberikan rekomendasi yang berguna kepada pengguna.
                         <br /><br />
-                        Kami mempelajari tentang teknologi AI, privasi data, dan membuat rancangan antarmuka. Meskipun banyak rintangan, kami bertekad untuk membantu orang-orang yang sedang berjuang dengan hutang.
+                        Gagasan tentang OrbitDebt bukan hanya sekadar proyek lomba, tetapi visi yang kuat untuk membantu orang-orang dalam mengelola dan mengatasi hutang mereka dengan lebih baik.
                     </p>
                 </div>
 
