@@ -234,7 +234,7 @@ export default function Home() {
 			<section className='grid gap-6 px-6 py-12 md:py-20 md:px-12 lg:px-32 lg:py-28'>
 				<div className='grid gap-4 text-center'>
 					<h2>Frequently Asked Question</h2>
-					<p>Semua yang anda perlu tahu mengenai produk. Tidak menemukan jawaban? <a className='hover:underline text-blue-600' href="mailto:orbit.smkn4bdg@gmail.com" target='_blank'>Hubungi kami</a>.</p>
+					<p>Semua yang anda perlu tahu mengenai produk. Tidak menemukan jawaban? <a className='hover:underline text-sky-300' href="mailto:orbit.smkn4bdg@gmail.com" target='_blank'>Hubungi kami</a>.</p>
 				</div>
 
 				<div className='grid gap-4'>
