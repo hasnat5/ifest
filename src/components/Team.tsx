@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import 'remixicon/fonts/remixicon.css'
 
-const Team: React.FC<TeamDataType> = ({ image, name, role, about, social }) => {
+const Team: React.FC<TeamDataType> = ({ image, name, role, about, social, size }) => {
     return (
         <div className='teamborder'>
             <div className='teamborderinside'>
@@ -12,10 +12,8 @@ const Team: React.FC<TeamDataType> = ({ image, name, role, about, social }) => {
                         src={image}
                         alt="OrbitDebt Banner"
                         className="saturate-0 contrast-125 w-3/6 h-auto rounded-lg justify-self-center"
-                        width={1468}
-                        height={1268}
-                        quality={100}
-                    // priority
+                        width={size}
+                        height={size}
                     />
 
                     <div className='grid gap-2 z-10'>

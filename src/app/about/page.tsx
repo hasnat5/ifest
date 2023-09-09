@@ -56,8 +56,6 @@ const About = () => {
                     className="w-full h-auto rounded-lg"
                     width={1468}
                     height={1268}
-                    quality={100}
-                    priority
                 />
             </section>
 
@@ -90,7 +88,7 @@ const About = () => {
                 <div className='grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8'>
                     {shuffledTeamData.map((data, key) => {
                         return (
-                            <Team image={data.image} name={data.name} about={data.about} role={data.role} key={key} social={data.social} />
+                            <Team image={data.image} name={data.name} about={data.about} role={data.role} key={key} social={data.social} size={data.size} />
                         )
                     })}
 

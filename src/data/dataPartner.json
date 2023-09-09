@@ -1,9 +1,9 @@
 [
     {
-        "img": "/assets/images/partnership/smkn4.png",
+        "img": "/assets/images/partnership/smkn4.webp",
         "link": "https://smkn4bdg.sch.id/",
         "width": 40,
-        "height": 104
+        "height": 40
     },
     {
         "img": "/assets/images/partnership/orbit.svg",
@@ -12,7 +12,7 @@
         "height": 40
     },
     {
-        "img": "/assets/images/partnership/upgradia.svg",
+        "img": "/assets/images/partnership/upgradia.png",
         "link": "https://upgradia.tech/",
         "width": 174,
         "height": 40

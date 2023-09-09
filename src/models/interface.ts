@@ -15,6 +15,7 @@ export interface TeamDataType {
     role: string;
     about: string;
     social: SocialLinks;
+    size: number;
 }
 
 export interface SocialLinks {

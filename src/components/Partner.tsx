@@ -39,15 +39,8 @@ const Partner = () => {
                                 width={data.width}
                                 height={data.height}
                                 alt="partner OrbitDebt"
-                                quality={100}
-                                priority
-                                sizes='100%'
                             />
                         </a>
-                        {/* <img
-                            className='py-8 mx-4 self-center h-24 w-full object-contain'
-                            src={data.img}
-                            alt="OrbitDebt Partner" /> */}
                     </SwiperSlide>
                 )
             })}

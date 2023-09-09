@@ -17,8 +17,6 @@ const CTA = () => {
                     className="w-full h-auto rounded-2xl ml-6 -mb-24 md:-mb-52 md:ml-16 lg:-mb-56 lg:ml-0"
                     width={1468}
                     height={1268}
-                    quality={100}
-                    priority
                 />
             </div>
         </div>

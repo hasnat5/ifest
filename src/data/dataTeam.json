@@ -9,7 +9,8 @@
             "linkedin": "https://www.linkedin.com/in/hasnatf/",
             "instagram": "https://www.instagram.com/hasnat5_/",
             "email": "mailto:ferdianandahasnat@gmail.com"
-        }
+        },
+        "size": 1686
     },
     {
         "image": "/assets/images/team/diaz.jpg",
@@ -21,7 +22,8 @@
             "linkedin": "https://www.linkedin.com/in/diaz-adriansyah-1a7a9624a/",
             "instagram": "https://www.instagram.com/zaid.jsx/",
             "email": "mailto:diazadrianz191205@gmail.com"
-        }
+        },
+        "size": 768
     },
     {
         "image": "/assets/images/team/raihana.jpg",
@@ -31,7 +33,8 @@
         "social": {
             "instagram": "https://instagram.com/b4cterya/",
             "email": "mailto:raihanaaaz2@gmail.com"
-        }
+        },
+        "size": 1686
     },
     {
         "image": "/assets/images/team/fadhli.jpg",
@@ -42,6 +45,7 @@
             "linkedin": "http://linkedin.com/in/mfadhlifathoni/",
             "instagram": "https://www.instagram.com/mfadhlifathoni/",
             "email": "mailto:fadhlifathoni62@gmail.com"
-        }
+        },
+        "size": 899
     }
 ]
