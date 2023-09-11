@@ -28,10 +28,10 @@ const Footer: React.FC = () => {
                 <section className='grid gap-8 items-start w-full lg:grid-flow-col lg:col-span-7 lg:gap-10'>
                     <div className='grid gap-3 w-fit'>
                         <h5>PAGE</h5>
-                        <a href="/" className='footerLink'>Home</a>
-                        <a href="/appropriateness" className='footerLink'>Appropriateness</a>
-                        <a href="/repayment" className='footerLink'>Repayment</a>
-                        <a href="/about" className='footerLink'>About</a>
+                        <Link href="/" className='footerLink'>Home</Link>
+                        <Link href="/appropriateness" className='footerLink'>Appropriateness</Link>
+                        <Link href="/repayment" className='footerLink'>Repayment</Link>
+                        <Link href="/about" className='footerLink'>About</Link>
                     </div>
                     <div className='grid gap-3 w-fit'>
                         <h5>SOCIAL MEDIA</h5>
