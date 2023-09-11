@@ -29,8 +29,8 @@ const Footer: React.FC = () => {
                     <div className='grid gap-3 w-fit'>
                         <h5>PAGE</h5>
                         <a href="/" className='footerLink'>Home</a>
-                        <a href="/" className='footerLink'>Appropriateness</a>
-                        <a href="/" className='footerLink'>Repayment</a>
+                        <a href="/appropriateness" className='footerLink'>Appropriateness</a>
+                        <a href="/repayment" className='footerLink'>Repayment</a>
                         <a href="/about" className='footerLink'>About</a>
                     </div>
                     <div className='grid gap-3 w-fit'>
