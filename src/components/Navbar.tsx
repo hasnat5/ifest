@@ -37,8 +37,8 @@ const Navbar = () => {
 
                     <ul className='px-6 grid divide-y divide-[#353539] md:px-12'>
                         <li><Link onClick={handleLinkClick} href={'/'} className='grid font-mono capitalize text-white text-xs md:text-sm py-4'>home</Link></li>
-                        <li><Link onClick={handleLinkClick} href={'/repayment'} className='grid font-mono capitalize text-white text-xs md:text-sm py-4'>repayment</Link></li>
                         <li><Link onClick={handleLinkClick} href={'/appropriateness'} className='grid font-mono capitalize text-white text-xs md:text-sm py-4'>appropriateness</Link></li>
+                        <li><Link onClick={handleLinkClick} href={'/repayment'} className='grid font-mono capitalize text-white text-xs md:text-sm py-4'>repayment</Link></li>
                         <li><Link onClick={handleLinkClick} href={'/about'} className='grid font-mono capitalize text-white text-xs md:text-sm py-4'>about us</Link></li>
                     </ul>
                 </div>
@@ -48,9 +48,8 @@ const Navbar = () => {
 
 
     return (
-        <nav className='w-full fixed top-0 z-50'>
-            <div className={`flex py-1.5 items-center justify-between pl-6 pr-3 transition duration-300 md:pl-12 md:pr-9 lg:px-32
-            ${scrolling || isOpen ? 'bg-[#0A090F] border-b border-[#353539]' : ''}`}>
+        <nav className={`w-full fixed top-0 z-50 transition duration-300 ${scrolling || isOpen ? 'bg-[#0A090F] border-b border-[#353539]' : ''}`}>
+            <div className={`flex py-1.5 items-center justify-between pl-6 pr-3 md:pl-12 md:pr-9 lg:px-32 mx-auto max-w-screen-xl`}>
                 <a href="/" className='z-10 flex items-center gap-2'>
                     <Image
                         src="/assets/images/logo/orbitdebt.png"
@@ -76,8 +75,8 @@ const Navbar = () => {
                 <div className='z-10 items-center hidden lg:block'>
                     <ul className='px-6 flex gap-6'>
                         <li><Link href={'/'} className='grid font-mono capitalize text-white text-sm py-4'>home</Link></li>
-                        <li><Link href={'/repayment'} className='grid font-mono capitalize text-white text-sm py-4'>repayment</Link></li>
                         <li><Link href={'/appropriateness'} className='grid font-mono capitalize text-white text-sm py-4'>appropriateness</Link></li>
+                        <li><Link href={'/repayment'} className='grid font-mono capitalize text-white text-sm py-4'>repayment</Link></li>
                         <li><Link href={'/about'} className='grid font-mono capitalize text-white text-sm py-4'>about us</Link></li>
                     </ul>
                 </div>

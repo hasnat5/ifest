@@ -29,12 +29,12 @@ const Footer: React.FC = () => {
                     <div className='grid gap-3 w-fit'>
                         <h5>PAGE</h5>
                         <a href="/" className='footerLink'>Home</a>
-                        <a href="/" className='footerLink'>Repayment</a>
                         <a href="/" className='footerLink'>Appropriateness</a>
+                        <a href="/" className='footerLink'>Repayment</a>
                         <a href="/about" className='footerLink'>About</a>
                     </div>
                     <div className='grid gap-3 w-fit'>
-                        <h5>MEDIA SOSIAL</h5>
+                        <h5>SOCIAL MEDIA</h5>
                         <a href="https://www.instagram.com/orbit4it/" target='_blank' className='footerLink flex items-start gap-3'>
                             <Icon icon="bxl:instagram-alt" className='text-xl' />
                             Instagram

@@ -122,14 +122,15 @@ export default function Home() {
 		<main className='container min-w-full bg-[#0A090F]'>
 
 			{/* BANNER */}
-			<section className='bgjumbotron grid gap-6 px-6 py-16 h-screen min-h-full md:px-12 lg:grid-cols-2 lg:px-32 lg:py-0 lg:min-h-screen lg:gap-12'>
-				<div className='text-center grid gap-6 content-center order-last lg:order-1 lg:text-start'>
-					<h1><span style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='bg-clip-text text-transparent'>OrbitDebt</span> AI</h1>
-					<p>Temukan Kemampuan Pinjaman Anda: Solusi Pelunasan Strategis yang Dirancang sesuai Kelayakan Finansial Anda.</p>
-					<Button />
-				</div>
-				<div className='grid justify-center content-center w-full h-full lg:order-1'>
-					{/* <Image
+			<section className='bgjumbotron'>
+				<div className='max-w-screen-xl mx-auto grid gap-6 px-6 py-16 h-screen min-h-full md:px-12 lg:grid-cols-2 lg:px-32 lg:py-0 lg:min-h-screen lg:gap-12'>
+					<div className='text-center grid gap-6 content-center order-last lg:order-1 lg:text-start'>
+						<h1><span style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='bg-clip-text text-transparent'>OrbitDebt</span> AI</h1>
+						<p>Temukan Kemampuan Pinjaman Anda: Solusi Pelunasan Strategis yang Dirancang sesuai Kelayakan Finansial Anda.</p>
+						<Button link='/appropriateness' title='get started' />
+					</div>
+					<div className='grid justify-center content-center w-full h-full lg:order-1'>
+						{/* <Image
 						src="/assets/images/banner.gif"
 						alt="OrbitDebt Banner"
 						className="min-w-full h-auto"
@@ -138,15 +139,16 @@ export default function Home() {
 						quality={100}
 						priority
 					/> */}
-					<Image
-						src="/assets/images/banner.png"
-						alt="OrbitDebt Banner"
-						className="min-w-full h-auto"
-						width={1468}
-						height={1268}
-						quality={100}
-						priority
-					/>
+						<Image
+							src="/assets/images/banner.png"
+							alt="OrbitDebt Banner"
+							className="min-w-full h-auto"
+							width={1468}
+							height={1268}
+							quality={100}
+							priority
+						/>
+					</div>
 				</div>
 			</section>
 
@@ -177,7 +179,7 @@ export default function Home() {
 			</section>
 
 			{/* ABOUT */}
-			<section className='grid gap-6 px-6 py-12 md:py-20 md:px-12 md:gap-12 lg:grid-cols-2 lg:px-32 lg:py-28'>
+			<section className='grid gap-6 px-6 py-12 md:py-20 md:px-12 md:gap-12 lg:grid-cols-2 lg:px-32 lg:py-28 max-w-screen-xl mx-auto'>
 				<div className='text-center grid gap-6 content-center order-last md:order-1 lg:text-start'>
 					<h2>Kenapa <span style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='bg-clip-text text-transparent'>OrbitDebt</span>?</h2>
 					<p>
@@ -209,7 +211,7 @@ export default function Home() {
 			</section>
 
 			{/* BENEFITS */}
-			<section className='grid gap-6 px-6 py-12 md:py-20 md:px-12 lg:px-32 lg:py-28 lg:gap-12'>
+			<section className='grid gap-6 px-6 py-12 md:py-20 md:px-12 lg:px-32 lg:py-28 lg:gap-12 mx-auto max-w-screen-xl'>
 				<div className='grid gap-4 justify-center text-center lg:gap-6'>
 					<h2>Tingkatkan <span style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }} className='bg-clip-text text-transparent'>perencanaan</span> Anda</h2>
 					<p className='max-w-3xl'>Tingkatkan perencanaan pengambilan utang. Buat pandangan jelas tentang langkah-langkah pembayaran dengan AI</p>
@@ -231,7 +233,7 @@ export default function Home() {
 			</section>
 
 			{/* FAQ */}
-			<section className='grid gap-6 px-6 py-12 md:py-20 md:px-12 lg:px-32 lg:py-28'>
+			<section className='grid gap-6 px-6 py-12 md:py-20 md:px-12 lg:px-32 lg:py-28 mx-auto max-w-screen-xl'>
 				<div className='grid gap-4 text-center'>
 					<h2>Frequently Asked Question</h2>
 					<p>Semua yang anda perlu tahu mengenai produk. Tidak menemukan jawaban? <a className='hover:underline text-sky-300' href="mailto:orbit.smkn4bdg@gmail.com" target='_blank'>Hubungi kami</a>.</p>
@@ -247,7 +249,7 @@ export default function Home() {
 			</section>
 
 
-			<section className='grid py-12 px-6 md:py-20 md:px-12 lg:px-32'>
+			<section className='grid py-12 px-6 md:py-20 md:px-12 lg:px-32 mx-auto max-w-screen-xl'>
 				<CTA />
 			</section>
 		</main>
