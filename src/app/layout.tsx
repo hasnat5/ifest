@@ -4,11 +4,16 @@ import localFont from 'next/font/local'
 import { Roboto_Mono } from 'next/font/google'
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
+import { Analytics } from '@vercel/analytics/react'
 
 
 export const metadata: Metadata = {
   title: 'OrbitDebt',
-  description: 'Pemantauan Utang dan Strategi Pelunasan adalah fitur yang menggunakan kecerdasan buatan untuk membantu individu dalam mengelola utang mereka dengan lebih efisien.',
+  description: 'OrbitDebt merupakan webapp penyedia layanan pengecekan kelayakan dan strategi pelunasan utang yang menggunakan kecerdasan buatan untuk membantu individu dalam mengelola finansial dengan lebih efektif.',
+  creator: 'Hasnat Ferdiananda',
+  authors: [{ name: 'Raihana Aisha Az-Zahra' }, { name: 'Muhammad fadhli Fathoni' }, { name: 'Diaz Adriansyah' }],
+  keywords: ['Finance', 'Debt', 'Repayment', 'AI', 'artificial intellegent', 'Money', 'Interest', 'Technology', 'Business', 'Credit', 'credit card', 'Dolar', 'Check', 'Checking', 'Strategy', 'Payment', 'Pay', 'Bank', 'Loan', 'Loans'],
+  applicationName: 'OrbitDebt'
 }
 
 const roboto_mono = Roboto_Mono({
@@ -38,6 +43,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   )
