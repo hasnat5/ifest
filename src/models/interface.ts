@@ -24,3 +24,8 @@ export interface SocialLinks {
     instagram?: string;
     email?: string;
 }
+
+export interface ButtonType {
+    title: string;
+    link: string;
+}
