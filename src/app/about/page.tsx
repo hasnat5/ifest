@@ -51,11 +51,11 @@ const About = () => {
                 </div>
 
                 <Image
-                    src="https://images.unsplash.com/photo-1603201667230-bd139210db18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1788&q=80"
+                    src="/assets/images/orbitdebt_team.webp"
                     alt="OrbitDebt Banner"
-                    className="w-full h-auto rounded-lg"
-                    width={1468}
-                    height={1268}
+                    className="w-full h-auto rounded-lg saturate-0 contrast-125"
+                    width={3073}
+                    height={1729}
                 />
             </section>
 
