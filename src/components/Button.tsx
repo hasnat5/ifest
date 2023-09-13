@@ -8,7 +8,7 @@ export const Button: React.FC<ButtonType> = ({ title, link }) => {
             href={link}
             style={{ backgroundImage: 'linear-gradient(313deg, #6843EC 17.53%, #00FF68  94.64%)' }}
             // style={{ backgroundImage: 'linear-gradient(313deg, #00FF68 -0%, #6843EC 100%)' }}
-            className='rounded-lg py-2 px-4 text-white font-mono text-base uppercase lg:w-fit lg:px-6'>
+            className='rounded-lg py-2 px-4 text-white font-mono text-base text-center uppercase lg:w-fit lg:px-6'>
             {title}
         </Link>
     )
