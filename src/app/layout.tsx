@@ -8,7 +8,10 @@ import { Analytics } from '@vercel/analytics/react'
 
 
 export const metadata: Metadata = {
-  title: 'OrbitDebt',
+  title: {
+    default: 'OrbitDebt', // a default is required when creating a template
+    template: '%s | OrbitDebt',
+  },
   description: 'OrbitDebt merupakan webapp penyedia layanan pengecekan kelayakan dan strategi pelunasan utang yang menggunakan kecerdasan buatan untuk membantu individu dalam mengelola finansial dengan lebih efektif.',
   creator: 'Hasnat Ferdiananda',
   authors: [{ name: 'Raihana Aisha Az-Zahra' }, { name: 'Muhammad fadhli Fathoni' }, { name: 'Diaz Adriansyah' }],

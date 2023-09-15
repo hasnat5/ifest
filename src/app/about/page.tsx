@@ -8,8 +8,13 @@ import CTA from '@/components/CTA';
 import shuffleArray from '@/utils/shuffleFunction'
 import { TeamDataType } from '@/models/interface'
 
+import { Metadata } from 'next'
 
-const About = () => {
+export const metadata: Metadata = {
+    title: 'About Page'
+}
+
+export default function About() {
     const [shuffledTeamData, setShuffledTeamData] = useState<Array<TeamDataType>>([]);
 
     useEffect(() => {
@@ -18,6 +23,7 @@ const About = () => {
         setShuffledTeamData(shuffledData);
     }, []);
     return (
+
         <main className='container min-w-full'>
             {/* HERO */}
             <section className='grid gap-12 px-6 pt-32 pb-16 text-center md:px-12 md:py-20 lg:px-32 lg:py-28 mx-auto max-w-screen-xl'>
@@ -99,7 +105,6 @@ const About = () => {
                 <CTA />
             </section>
         </main>
+
     )
 }
-
-export default About
