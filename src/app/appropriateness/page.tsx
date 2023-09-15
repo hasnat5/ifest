@@ -1,8 +1,12 @@
-import { Button } from '@/components/Button'
 import UnderConstruction from '@/components/UnderConstruction'
+import { Metadata } from 'next'
 import Link from 'next/link'
 import React from 'react'
 import 'remixicon/fonts/remixicon.css'
+
+export const metadata: Metadata = {
+    title: 'Appropriateness'
+}
 
 const page = () => {
     return (

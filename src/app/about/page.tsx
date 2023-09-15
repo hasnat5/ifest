@@ -1,27 +1,15 @@
-'use client'
 import { Button } from '@/components/Button'
-import Team from '@/components/Team'
 import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
-import dataTeam from '../../data/dataTeam.json';
 import CTA from '@/components/CTA';
-import shuffleArray from '@/utils/shuffleFunction'
-import { TeamDataType } from '@/models/interface'
-
 import { Metadata } from 'next'
+import TeamContainer from '@/components/TeamContainer';
 
 export const metadata: Metadata = {
-    title: 'About Page'
+    title: 'About Us'
 }
 
 export default function About() {
-    const [shuffledTeamData, setShuffledTeamData] = useState<Array<TeamDataType>>([]);
 
-    useEffect(() => {
-        // Shuffle the initial team data when the component mounts
-        const shuffledData = shuffleArray(dataTeam);
-        setShuffledTeamData(shuffledData);
-    }, []);
     return (
 
         <main className='container min-w-full'>
@@ -92,11 +80,7 @@ export default function About() {
 
 
                 <div className='grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8'>
-                    {shuffledTeamData.map((data, key) => {
-                        return (
-                            <Team image={data.image} name={data.name} about={data.about} role={data.role} key={key} social={data.social} size={data.size} />
-                        )
-                    })}
+                    <TeamContainer />
 
                 </div>
             </section>
